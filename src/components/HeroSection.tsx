@@ -55,7 +55,7 @@ const HeroSection = () => {
           animationFillMode: 'forwards'
         }}>
             <Button onClick={scrollToContact} className="btn-primary text-lg px-8 py-4 group hover:animate-pulse-scale transition-all duration-300">
-              <span className="group-hover:scale-110 transition-transform duration-300">remreتواصل معنا الآن</span>
+              <span className="group-hover:scale-110 transition-transform duration-300">تواصل معنا الآن</span>
             </Button>
             <a href="https://wa.me/2180925142211" target="_blank" rel="noopener noreferrer" className="btn-secondary text-lg px-8 py-4 inline-block group hover:animate-glow transition-all duration-300">
               <span className="group-hover:scale-110 transition-transform duration-300">واتساب</span>
