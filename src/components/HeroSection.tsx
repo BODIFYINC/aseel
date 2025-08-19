@@ -18,11 +18,14 @@ const HeroSection = () => {
       {/* Floating Elements */}
       <div className="absolute inset-0 z-5 overflow-hidden">
         <div className="absolute top-20 left-10 w-32 h-32 bg-medical-500/10 rounded-full animate-float"></div>
-        <div className="absolute bottom-32 right-20 w-24 h-24 bg-medical-400/15 rounded-full animate-bounce-gentle" style={{
+        <div className="absolute bottom-32 right-20 w-24 h-24 bg-medical-400/15 rounded-full animate-wave" style={{
         animationDelay: '1s'
       }}></div>
         <div className="absolute top-1/2 left-1/4 w-16 h-16 bg-medical-300/20 rounded-full animate-pulse-scale" style={{
         animationDelay: '2s'
+      }}></div>
+        <div className="absolute top-32 right-1/3 w-20 h-20 bg-gradient-to-r from-medical-500/10 to-medical-400/10 rounded-full animate-gentle-rotate" style={{
+        animationDelay: '3s'
       }}></div>
       </div>
 
@@ -55,7 +58,7 @@ const HeroSection = () => {
           animationFillMode: 'forwards'
         }}>
             <Button onClick={scrollToContact} className="btn-primary text-lg px-8 py-4 group hover:animate-pulse-scale transition-all duration-300">
-              <span className="group-hover:scale-110 transition-transform duration-300">تواصل معنا الآن</span>
+              <span className="group-hover:scale-110 transition-transform duration-300 text-white">تواصل معنا الآن</span>
             </Button>
             <a href="https://wa.me/2180925142211" target="_blank" rel="noopener noreferrer" className="btn-secondary text-lg px-8 py-4 inline-block group hover:animate-glow transition-all duration-300">
               <span className="group-hover:scale-110 transition-transform duration-300">واتساب</span>
@@ -69,7 +72,7 @@ const HeroSection = () => {
           animationDelay: '1.4s',
           animationFillMode: 'forwards'
         }}>
-            <div className="w-16 h-16 bg-medical-500 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:animate-bounce-gentle transition-all duration-300 group-hover:bg-medical-400">
+            <div className="w-16 h-16 bg-medical-500 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:animate-wave transition-all duration-300 group-hover:bg-medical-400">
               <span className="text-2xl group-hover:scale-110 transition-transform duration-300">🏥</span>
             </div>
             <h3 className="text-xl font-semibold mb-2 group-hover:text-medical-300 transition-colors duration-300">خدمة 24/7</h3>
@@ -80,7 +83,7 @@ const HeroSection = () => {
           animationDelay: '1.7s',
           animationFillMode: 'forwards'
         }}>
-            <div className="w-16 h-16 bg-medical-500 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:animate-bounce-gentle transition-all duration-300 group-hover:bg-medical-400">
+            <div className="w-16 h-16 bg-medical-500 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:animate-wave transition-all duration-300 group-hover:bg-medical-400">
               <span className="text-2xl group-hover:scale-110 transition-transform duration-300">👨‍⚕️</span>
             </div>
             <h3 className="text-xl font-semibold mb-2 group-hover:text-medical-300 transition-colors duration-300">أطباء متخصصون</h3>
@@ -91,7 +94,7 @@ const HeroSection = () => {
           animationDelay: '2s',
           animationFillMode: 'forwards'
         }}>
-            <div className="w-16 h-16 bg-medical-500 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:animate-bounce-gentle transition-all duration-300 group-hover:bg-medical-400">
+            <div className="w-16 h-16 bg-medical-500 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:animate-wave transition-all duration-300 group-hover:bg-medical-400">
               <span className="text-2xl group-hover:scale-110 transition-transform duration-300">🔬</span>
             </div>
             <h3 className="text-xl font-semibold mb-2 group-hover:text-medical-300 transition-colors duration-300">تقنيات حديثة</h3>

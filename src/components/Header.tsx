@@ -17,7 +17,6 @@ const Header = () => {
     { id: 'about', label: 'من نحن' },
     { id: 'services', label: 'خدماتنا' },
     { id: 'doctors', label: 'أطبائنا' },
-    { id: 'offers', label: 'عروض خاصة' },
     { id: 'gallery', label: 'صور' },
     { id: 'testimonials', label: 'آراء العملاء' },
     { id: 'news', label: 'أخبار' },

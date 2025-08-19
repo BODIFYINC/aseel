@@ -190,7 +190,7 @@
     }
   }
 
-  @keyframes scale-in {
+@keyframes scale-in {
     from {
       opacity: 0;
       transform: scale(0.9);
@@ -198,6 +198,48 @@
     to {
       opacity: 1;
       transform: scale(1);
+    }
+  }
+
+  .animate-shimmer {
+    animation: shimmer 3s ease-in-out infinite;
+  }
+
+  .animate-wave {
+    animation: wave 4s ease-in-out infinite;
+  }
+
+  .animate-gentle-rotate {
+    animation: gentle-rotate 15s linear infinite;
+  }
+
+  @keyframes shimmer {
+    0%, 100% { 
+      background-position: -200% 0;
+    }
+    50% { 
+      background-position: 200% 0;
+    }
+  }
+
+  @keyframes wave {
+    0%, 100% { 
+      transform: translateY(0) rotate(0deg);
+    }
+    25% { 
+      transform: translateY(-10px) rotate(1deg);
+    }
+    75% { 
+      transform: translateY(5px) rotate(-1deg);
+    }
+  }
+
+  @keyframes gentle-rotate {
+    0% { 
+      transform: rotate(0deg);
+    }
+    100% { 
+      transform: rotate(360deg);
     }
   }
 }
