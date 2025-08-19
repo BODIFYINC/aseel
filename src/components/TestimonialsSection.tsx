@@ -26,9 +26,9 @@ const TestimonialsSection = () => {
     <section id="testimonials" className="section-padding bg-gradient-to-br from-navy-800 to-navy-900">
       <div className="container-custom">
         <div className="text-center mb-16 animate-fade-in">
-          <h2 className="text-4xl font-bold text-slate-100 mb-6">آراء العملاء</h2>
+          <h2 className="text-4xl font-bold text-white mb-6">آراء العملاء</h2>
           <div className="w-20 h-1 bg-medical-500 mx-auto mb-6"></div>
-          <p className="text-xl text-slate-300">
+          <p className="text-xl text-white">
             ما يقوله مرضانا عن خدماتنا وجودة الرعاية الطبية التي نقدمها
           </p>
         </div>
@@ -40,14 +40,12 @@ const TestimonialsSection = () => {
               className="card-elevated p-8 text-center animate-fade-in"
               style={{ animationDelay: `${index * 200}ms` }}
             >
-              {/* Avatar placeholder */}
-              <div className="w-16 h-16 bg-gradient-to-br from-medical-400 to-medical-600 rounded-full flex items-center justify-center mx-auto mb-4">
-                <span className="text-white font-bold text-xl">
-                  {testimonial.name.charAt(0)}
-                </span>
+              {/* Simple icon instead of profile picture */}
+              <div className="w-16 h-16 bg-gradient-to-br from-medical-500 to-medical-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                <span className="text-white font-bold text-2xl">👤</span>
               </div>
 
-              <h4 className="text-xl font-semibold text-slate-100 mb-3">
+              <h4 className="text-xl font-semibold text-white mb-3">
                 {testimonial.name}
               </h4>
 
@@ -55,7 +53,7 @@ const TestimonialsSection = () => {
                 {renderStars(testimonial.rating)}
               </div>
 
-              <p className="text-slate-300 leading-relaxed italic">
+              <p className="text-white leading-relaxed italic text-lg">
                 "{testimonial.review}"
               </p>
 
