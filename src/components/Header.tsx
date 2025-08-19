@@ -16,7 +16,7 @@ const Header = () => {
   const navItems = [
     { id: 'about', label: 'من نحن' },
     { id: 'services', label: 'خدماتنا' },
-    { id: 'doctors', label: 'أطبائنا' },
+    
     { id: 'gallery', label: 'صور' },
     { id: 'testimonials', label: 'آراء العملاء' },
     { id: 'news', label: 'أخبار' },
