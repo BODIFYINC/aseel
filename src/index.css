@@ -127,7 +127,7 @@
   }
 
   .btn-primary {
-    @apply bg-medical-600 hover:bg-medical-700 text-white font-medium py-3 px-6 rounded-lg transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1;
+    @apply bg-gradient-to-r from-medical-500 to-medical-600 hover:from-medical-400 hover:to-medical-500 text-navy-900 font-bold py-3 px-6 rounded-lg transition-all duration-500 shadow-lg hover:shadow-2xl hover:shadow-medical-500/30 transform hover:-translate-y-2 hover:animate-pulse-glow-slow;
   }
 
   .btn-secondary {
@@ -240,6 +240,67 @@
     }
     100% { 
       transform: rotate(360deg);
+    }
+  }
+
+  .animate-gradient {
+    animation: gradient 8s ease infinite;
+    background-size: 400% 400%;
+  }
+
+  .animate-pulse-glow-slow {
+    animation: pulse-glow-slow 4s ease-in-out infinite;
+  }
+
+  .animate-bounce-slow {
+    animation: bounce-slow 3s ease-in-out infinite;
+  }
+
+  .animate-slide-diagonal {
+    animation: slide-diagonal 6s ease-in-out infinite;
+  }
+
+  @keyframes gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+  @keyframes pulse-glow-slow {
+    0%, 100% { 
+      box-shadow: 0 0 20px hsl(var(--medical-500) / 0.2);
+      transform: scale(1);
+    }
+    50% { 
+      box-shadow: 0 0 60px hsl(var(--medical-500) / 0.5);
+      transform: scale(1.02);
+    }
+  }
+
+  @keyframes bounce-slow {
+    0%, 100% { 
+      transform: translateY(0);
+    }
+    50% { 
+      transform: translateY(-15px);
+    }
+  }
+
+  @keyframes slide-diagonal {
+    0%, 100% { 
+      transform: translateX(0) translateY(0);
+    }
+    25% { 
+      transform: translateX(10px) translateY(-10px);
+    }
+    75% { 
+      transform: translateX(-10px) translateY(10px);
     }
   }
 }

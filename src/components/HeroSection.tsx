@@ -17,15 +17,18 @@ const HeroSection = () => {
 
       {/* Floating Elements */}
       <div className="absolute inset-0 z-5 overflow-hidden">
-        <div className="absolute top-20 left-10 w-32 h-32 bg-medical-500/10 rounded-full animate-float"></div>
-        <div className="absolute bottom-32 right-20 w-24 h-24 bg-medical-400/15 rounded-full animate-wave" style={{
+        <div className="absolute top-20 left-10 w-32 h-32 bg-gradient-to-r from-medical-500/10 to-medical-400/15 rounded-full animate-bounce-slow"></div>
+        <div className="absolute bottom-32 right-20 w-24 h-24 bg-gradient-to-br from-medical-400/15 to-medical-300/20 rounded-full animate-slide-diagonal" style={{
         animationDelay: '1s'
       }}></div>
-        <div className="absolute top-1/2 left-1/4 w-16 h-16 bg-medical-300/20 rounded-full animate-pulse-scale" style={{
+        <div className="absolute top-1/2 left-1/4 w-16 h-16 bg-medical-300/20 rounded-full animate-pulse-glow-slow" style={{
         animationDelay: '2s'
       }}></div>
         <div className="absolute top-32 right-1/3 w-20 h-20 bg-gradient-to-r from-medical-500/10 to-medical-400/10 rounded-full animate-gentle-rotate" style={{
         animationDelay: '3s'
+      }}></div>
+        <div className="absolute bottom-1/4 left-1/3 w-12 h-12 bg-gradient-to-tr from-medical-600/15 to-medical-500/20 rounded-full animate-wave" style={{
+        animationDelay: '4s'
       }}></div>
       </div>
 
@@ -58,7 +61,7 @@ const HeroSection = () => {
           animationFillMode: 'forwards'
         }}>
             <Button onClick={scrollToContact} className="btn-primary text-lg px-8 py-4 group hover:animate-pulse-scale transition-all duration-300">
-              <span className="group-hover:scale-110 transition-transform duration-300 text-white">تواصل معنا الآن</span>
+              <span className="group-hover:scale-110 transition-transform duration-300 text-navy-900 font-bold">تواصل معنا الآن</span>
             </Button>
             <a href="https://wa.me/2180925142211" target="_blank" rel="noopener noreferrer" className="btn-secondary text-lg px-8 py-4 inline-block group hover:animate-glow transition-all duration-300">
               <span className="group-hover:scale-110 transition-transform duration-300">واتساب</span>
@@ -72,8 +75,8 @@ const HeroSection = () => {
           animationDelay: '1.4s',
           animationFillMode: 'forwards'
         }}>
-            <div className="w-16 h-16 bg-medical-500 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:animate-wave transition-all duration-300 group-hover:bg-medical-400">
-              <span className="text-2xl group-hover:scale-110 transition-transform duration-300">🏥</span>
+            <div className="w-16 h-16 bg-gradient-to-br from-medical-500 to-medical-600 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:animate-pulse-glow-slow transition-all duration-500 shadow-lg group-hover:shadow-medical-500/50">
+              <span className="text-2xl group-hover:scale-125 transition-transform duration-500">🏥</span>
             </div>
             <h3 className="text-xl font-semibold mb-2 group-hover:text-medical-300 transition-colors duration-300">خدمة 24/7</h3>
             <p className="text-slate-300 group-hover:text-slate-200 transition-colors duration-300">نعمل على مدار الساعة لخدمتكم</p>
@@ -83,8 +86,8 @@ const HeroSection = () => {
           animationDelay: '1.7s',
           animationFillMode: 'forwards'
         }}>
-            <div className="w-16 h-16 bg-medical-500 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:animate-wave transition-all duration-300 group-hover:bg-medical-400">
-              <span className="text-2xl group-hover:scale-110 transition-transform duration-300">👨‍⚕️</span>
+            <div className="w-16 h-16 bg-gradient-to-br from-medical-500 to-medical-600 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:animate-pulse-glow-slow transition-all duration-500 shadow-lg group-hover:shadow-medical-500/50">
+              <span className="text-2xl group-hover:scale-125 transition-transform duration-500">👨‍⚕️</span>
             </div>
             <h3 className="text-xl font-semibold mb-2 group-hover:text-medical-300 transition-colors duration-300">أطباء متخصصون</h3>
             <p className="text-slate-300 group-hover:text-slate-200 transition-colors duration-300">نخبة من أفضل الأطباء</p>
@@ -94,8 +97,8 @@ const HeroSection = () => {
           animationDelay: '2s',
           animationFillMode: 'forwards'
         }}>
-            <div className="w-16 h-16 bg-medical-500 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:animate-wave transition-all duration-300 group-hover:bg-medical-400">
-              <span className="text-2xl group-hover:scale-110 transition-transform duration-300">🔬</span>
+            <div className="w-16 h-16 bg-gradient-to-br from-medical-500 to-medical-600 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:animate-pulse-glow-slow transition-all duration-500 shadow-lg group-hover:shadow-medical-500/50">
+              <span className="text-2xl group-hover:scale-125 transition-transform duration-500">🔬</span>
             </div>
             <h3 className="text-xl font-semibold mb-2 group-hover:text-medical-300 transition-colors duration-300">تقنيات حديثة</h3>
             <p className="text-slate-300 group-hover:text-slate-200 transition-colors duration-300">أحدث الأجهزة والتقنيات الطبية</p>
